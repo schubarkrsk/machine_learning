@@ -5,6 +5,7 @@
 * numpy
 * pandas
 * scikit-learn
+* sklearn
 * scipy
 * seaborn
 
