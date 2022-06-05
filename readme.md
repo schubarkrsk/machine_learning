@@ -21,3 +21,12 @@
 * pytz            2022.1
 * six             1.16.0
 * threadpoolctl   3.1.0
+
+## Как использовать менеджер библиотек pip
+WINDOWS
+* Открыть коммандную строку или powershell (`Win+R -> CMD`)
+* В открывшемся окне используйте `pip install LIBNAME`, где `LIBNAME` - имя необходимого пакета
+
+UNIX / MAC OS X
+* Откройте терминал `Ctrl+Alt+T` для UNIX / `Command + Пробел` для OS X
+* В открывшемся окне используйте `python3 -m pip install LIBNAME`, где `LIBNAME` - имя необходимого пакета
