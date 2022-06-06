@@ -8,6 +8,10 @@ from sklearn.datasets import load_boston
 
 
 def draw_boxplot():
+    """
+    Функция отрисовывает столбчатую диаграмму с усами
+    на основе заданного URL адреса
+    """
     url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
     names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
     table = pandas.read_csv(url, names=names)
@@ -17,6 +21,10 @@ def draw_boxplot():
 
 
 def example_sin():
+    """
+    Функция взята их документации PyPlot
+    в связке с NumPy она отрисовывает синусоиду (график по точкам)
+    """
     x = np.arange(0, 5, 0.1)
     y = np.sin(x)
     pyplot.plot(x, y)
@@ -24,6 +32,11 @@ def example_sin():
 
 
 def example_pie():
+    """
+    Функция отрисовывает круговую диаграмму на основе
+    CSV таблицы, беря из нее первые 10 строк и значений столбца № 3 (row[2])
+    подписи беруться из столбца № 0
+    """
     table = pandas.read_csv("multidimensional_data.csv", sep=";")
     x = []
     labels = []
@@ -36,6 +49,9 @@ def example_pie():
 
 
 def draw():
+    """
+    Функция в процессе разработки
+    """
     boston = load_boston()
 
 
