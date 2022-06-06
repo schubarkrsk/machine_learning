@@ -16,11 +16,24 @@ def draw_boxplot():
     pyplot.show()
 
 
-def example_api():
+def example_sin():
     x = np.arange(0, 5, 0.1)
     y = np.sin(x)
     pyplot.plot(x, y)
     pyplot.show()
+
+
+def example_pie():
+    table = pandas.read_csv("multidimensional_data.csv", sep=";")
+    x = []
+    labels = []
+    for row in table.head(10).values:
+        labels.append(row[0])
+        x.append(row[2])
+
+    pyplot.pie(x, labels=labels)
+    pyplot.show()
+
 
 def draw():
     boston = load_boston()
@@ -28,7 +41,8 @@ def draw():
 
 if __name__ == "__main__":
     draw_boxplot()
-    example_api()
+    example_sin()
+    example_pie()
 
     # Примеры можно найти в документации на оф. сайте
     # https//matplotlib.org/stable/api/_as_gen/ matplotlib.pyplot.html

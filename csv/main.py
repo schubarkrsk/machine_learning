@@ -46,7 +46,7 @@ def get_column(table, column):
 
 
 if __name__ == "__main__":
-    csv_table = pandas.read_csv("multidimensional_data.csv", sep=";")  # Загружаем CSV таблицу, параметр1 = путь к таблице, sep=";" разделитель используемый в таблице
+    csv_table = pandas.read_csv("../ui/multidimensional_data.csv", sep=";")  # Загружаем CSV таблицу, параметр1 = путь к таблице, sep=";" разделитель используемый в таблице
 
     print("Выводим полную таблицу\n", csv_table)
     print("Выводим заголовки\n", get_names(csv_table))
