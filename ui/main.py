@@ -1,6 +1,7 @@
 # Основные библиотеки
 import pandas
 from matplotlib import pyplot
+import numpy as np
 
 # Библиотеки датасетов
 from sklearn.datasets import load_boston
@@ -15,9 +16,19 @@ def draw_boxplot():
     pyplot.show()
 
 
+def example_api():
+    x = np.arange(0, 5, 0.1)
+    y = np.sin(x)
+    pyplot.plot(x, y)
+    pyplot.show()
+
 def draw():
     boston = load_boston()
 
 
 if __name__ == "__main__":
     draw_boxplot()
+    example_api()
+
+    # Примеры можно найти в документации на оф. сайте
+    # https//matplotlib.org/stable/api/_as_gen/ matplotlib.pyplot.html
